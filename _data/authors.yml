@@ -33,12 +33,12 @@ author1:
   # Comment/uncommet to show/hide
   # Rearrange to change the order in which they appear
   social:
-    twitter:         <username>
-    github:          <username>
+    # twitter:         <username>
+    github:          apion2514
     # email:           <mail@domain.tld>
     # rss:             https://<url>/feed.xml
     # facebook:        <username>
-    # google:          <number>
+    google:          apion2514@gmail.com
     # vk:              <username>
     # youtube:         <string_string_string>
     # vimeo:           <username>
@@ -83,8 +83,8 @@ author2:
 
     Open `_data/authors.yml` to edit this text.
   picture:           https://placehold.it/128x128
-  twitter:           <username>
-  github:            <username>
+  # twitter:           <username>
+  github:            apion2514
   accent_color:      '#268bd2'
   accent_image:
     background:      '#202020'
