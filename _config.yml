@@ -54,6 +54,8 @@ menu:
   #   url:               /docs/
   - title:             About
     url:               /about/
+  - title:             History
+    url:               /history/
   - title:             Portfolio
     url:               /portfolio/
 
