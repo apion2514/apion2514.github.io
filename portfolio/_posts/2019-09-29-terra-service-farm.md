@@ -11,14 +11,14 @@ description: >
 
 
 <div>
-  <img src="/assets/img/portfolio/terraservice1.jpg" width="20%" onclick="changeNumber(1)"/>
-  <img src="/assets/img/portfolio/terraservice2.jpg" width="20%" onclick="changeNumber(2)"/>
-  <img src="/assets/img/portfolio/terraservice3.jpg" width="20%" onclick="changeNumber(3)"/>
-  <img src="/assets/img/portfolio/terraservice4.jpg" width="20%" onclick="changeNumber(4)"/>
-  <img src="/assets/img/portfolio/terraservice5.jpg" width="20%" onclick="changeNumber(5)"/>
+  <img src="/assets/img/portfolio/terraservice1.jpg" width="20%" onclick="changePopup(true ,1)"/>
+  <img src="/assets/img/portfolio/terraservice2.jpg" width="20%" onclick="changePopup(true ,2)"/>
+  <img src="/assets/img/portfolio/terraservice3.jpg" width="20%" onclick="changePopup(true ,3)"/>
+  <img src="/assets/img/portfolio/terraservice4.jpg" width="20%" onclick="changePopup(true ,4)"/>
+  <img src="/assets/img/portfolio/terraservice5.jpg" width="20%" onclick="changePopup(true ,5)"/>
 </div>
 
-<div class="popup-bg hidden">
+<div class="popup-bg hidden" onclick="changePopup(false)">
   <div class="popup">
     <img class="popupImg" src=""/>
   </div>
@@ -27,6 +27,23 @@ description: >
 <script>
   var imageLink = '/assets/img/portfolio/terraservice';
   var imageNumber = 1;
+  var isPopup = false;
+
+  function changePopup(value, number) {
+    var item = document.querySelector('popup-bg');
+
+    if (value === true && isPopup === true) {
+      changeNumber(number);
+    } else if (value === true && isPopup === false) {
+      item.className.replaceAll(' hidden', '');
+
+      isPopup = true;
+    } else if (value === false) {
+      item.className += ' hidden';
+
+      isPopup = false;
+    }
+  }
 
   function changeNumber(number) {
     imageNumber = number;
