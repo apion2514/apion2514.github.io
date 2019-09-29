@@ -37,10 +37,10 @@ title: 테라서비스 농가용 웹사이트
     var i = 0;
 
     for (i; i < item.length; i++) {
-      item[0].className = 'sub-img'
+      item[0].className = 'sub-img';
     }
 
-    item[choiceNumber].className += ' active'
+    item[choiceNumber].className += ' active';
 
     document.querySelector('#main-img').src = imageLink + number + '.jpg';
 
