@@ -9,20 +9,20 @@ title: 테라서비스 농가용 웹사이트
 
 <div class="table">
   <div class="tr">
-    <div class="td active">
-      <img src="/assets/img/portfolio/terraservice1.jpg" onclick="changeImage(1)"/>
+    <div class="td sub-img active" onclick="changeImage(1)">
+      <img src="/assets/img/portfolio/terraservice1.jpg"/>
     </div>
-    <div class="td">
-      <img src="/assets/img/portfolio/terraservice2.jpg" onclick="changeImage(2)"/>
+    <div class="td sub-img" onclick="changeImage(2)">
+      <img src="/assets/img/portfolio/terraservice2.jpg"/>
     </div>
-    <div class="td">
-      <img src="/assets/img/portfolio/terraservice3.jpg" onclick="changeImage(3)"/>
+    <div class="td sub-img" onclick="changeImage(3)">
+      <img src="/assets/img/portfolio/terraservice3.jpg"/>
     </div>
-    <div class="td">
-      <img src="/assets/img/portfolio/terraservice4.jpg" onclick="changeImage(4)"/>
+    <div class="td sub-img" onclick="changeImage(4)">
+      <img src="/assets/img/portfolio/terraservice4.jpg"/>
     </div>
-    <div class="td">
-      <img src="/assets/img/portfolio/terraservice5.jpg" onclick="changeImage(5)"/>
+    <div class="td sub-img" onclick="changeImage(5)">
+      <img src="/assets/img/portfolio/terraservice5.jpg"/>
     </div>
   </div>
 </div>
@@ -31,19 +31,16 @@ title: 테라서비스 농가용 웹사이트
   var imageLink = '/assets/img/portfolio/terraservice';
 
   function changeImage(number) {
-
     var choiceNumber = number - 1;
-    var item = document.querySelector('.sub-img');
+    var item = document.querySelectorAll('.sub-img');
     var i = 0;
 
     for (i; i < item.length; i++) {
-      item[0].className = 'sub-img';
+      item[i].className = 'td sub-img';
     }
 
     item[choiceNumber].className += ' active';
-
     document.querySelector('#main-img').src = imageLink + number + '.jpg';
-
   }
 </script>
 
@@ -59,8 +56,8 @@ title: 테라서비스 농가용 웹사이트
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;
-  right: 0;
+  left: 5px;
+  right: 5px;
 
   -moz-transition: all .3s linear;
   -webkit-transition: all .3s linear;
