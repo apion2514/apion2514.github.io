@@ -35,16 +35,14 @@ tags: [Java, JSP, HTML, CSS, JavaScript]
   <div class="portfolio-description-comment">* [테라서비스]는 농작물 재배 도중 발생되는 각종 문제들에 효과적으로 대응 할 수 있도록 지원하는 서비스입니다.</div>
 </div>
 
-<div class="portfolio">
-  <div class="portfolio-title">개발 및 유지보수 기간 : </div>
-  <div class="portfolio-date">2019.01.09 ~ 2019.06.03</div>
+<div class="portfolio portfolio-date">
+  <div class="portfolio-title">프로젝트 기간 : </div>
+  <span> 2019.01.09 ~ 2019.06.03 </span>
 </div>
 
-<div class="portfolio">
-  <div class="portfolio-title">홈페이지 경로 : </div>
-  <div class="portfolio-link">
-    <a href="http://m3f.terra-service.co.kr" title="테라서비스-농가">http://m3f.terra-service.co.kr</a>
-  </div>
+<div class="portfolio portfolio-link">
+  <div class="portfolio-title">주소 : </div>
+  <a href="http://m3f.terra-service.co.kr" title="테라서비스-농가">http://m3f.terra-service.co.kr</a>
 </div>
 
 <script>
