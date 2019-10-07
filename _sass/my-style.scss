@@ -76,17 +76,7 @@
   color: blue;
 }
 
-.portfolio-title,
-.portfolio-date,
-.portfolio-link {
-  display: inline-block;
-}
-
 .portfolio-title {
-  width: 35%;
-}
-
-.portfolio-date,
-.portfolio-link {
-  width: 65%;
+  display: inline-block;
+  margin-right: 0.5rem;
 }
