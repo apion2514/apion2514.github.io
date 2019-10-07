@@ -23,23 +23,23 @@
     </p>
 
     {% assign alt = false %}
-    <!-- {% unless hide_image %}{% if post.image %}
+    {% unless hide_image %}{% if post.image %}
       <div class="img lead sixteen-nine">
         {% include components/hy-img.html img=post.image alt=post.title %}
       </div>
       {% assign alt = '' %}
     {% endif %}{% endunless %}
 
-    {% include components/message.html text=post.description hide=page.hide_description alt=alt %} -->
+    {% include components/message.html text=post.description hide=page.hide_description alt=alt %}
   </header>
 
   {% if no_excerpt %}
     {{ post.content }}
   {% else %}
-    {{ post.excerpt }}
+    <!-- {{ post.excerpt }} -->
 
-    {% capture post_title %}<a class="heading flip-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>{% endcapture %}
-    {% assign text = site.data.strings.continue_reading | default:"Continue reading <!--post_title-->" %}
+    <!-- {% capture post_title %}<a class="heading flip-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>{% endcapture %}
+    {% assign text = site.data.strings.continue_reading | default:"Continue reading <!--post_title-->" %} -->
     <footer>
       <p class="read-more">
         {{ text | replace:"<!--post_title-->", post_title }}
