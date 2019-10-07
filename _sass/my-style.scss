@@ -10,6 +10,10 @@
 
 // 스타일 추가
 
+.hidden {
+  display: none !important;
+}
+
 .test {
   background-color: red;
   color: white;
@@ -27,4 +31,61 @@
   display: inline-block;
   position: relative;
   padding: 0 5px;
+}
+
+.td:before {
+  background: rgba(140, 140, 140, 0.5);
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 5px;
+  right: 5px;
+
+  -moz-transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  -ms-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.td.active:before {
+  background: none;
+}
+
+.td-5 .td {
+  width: 20%;
+}
+
+.portfolio {
+  margin-bottom: 1rem;
+}
+
+.portfolio-description {
+  margin-top: 1rem;
+  padding: 1rem;
+  color: var(--gray-text);
+  background-color: var(--gray-bg);
+}
+
+.portfolio-description-comment {
+  margin-top: 1rem;
+  font-size: 10pt;
+  color: blue;
+}
+
+.portfolio-title,
+.portfolio-date,
+.portfolio-link {
+  display: inline-block;
+}
+
+.portfolio-title {
+  width: 35%;
+}
+
+.portfolio-date,
+.portfolio-link {
+  width: 65%;
 }
